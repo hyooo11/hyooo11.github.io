@@ -8,28 +8,60 @@
    <title>Momentum</title>
 </head>
 <body>
-   <form id="login-form" class="hidden">
-      <input
-         required
-         maxlenth = "15"
-         type="text"
-         placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In"/>
-   </form>
-   <h2 id="clock">00:00</h2>
-   <h1 id="greeting" class="hidden"></h1>
-   <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required/>
-   </form>
-   <ul id="todo-list"></ul>
-   <div id="quote">
-      <span></span>
-      <span></span>
-   </div>
-   <div id="weather">
-      <span></span>
-      <span></span>
+   <div id="wrapper">
+      <!-- <img class="bgimg" src="img/1.jpeg"> -->
+      <div class="content">
+         <div id="todoWarp">
+            <!-- 투두 리스트 -->
+            <form id="todo-form">
+               <input type="text" placeholder="Write a To Do and Press Enter" required/>
+            </form>
+            <!-- 투두 리스트의 리스트 -->
+            <div>
+               <p class="deco">to do list</p>
+               <ul id="todo-list"></ul>
+            </div>
+         </div>
+         <div id="centerContent">
+            <div id="clockWrap">
+               <p class="deco">What Time?</p>
+               <h2 id="clock">00:00</h2>
+            </div>
+            <div id="loginWarp">
+               <!-- 로그인 영역 -->
+               <form id="login-form" class="hidden">
+                  <input
+                     required
+                     maxlenth = "15"
+                     type="text"
+                     placeholder="What is your name?"
+                  />
+                  <input type="submit" value="LogIn" class="btn"/>
+               </form>
+               <h1 id="greeting" class="hidden"></h1>
+            </div>
+            <!-- 시계 영역 -->
+            
+         </div>
+         <div id="rightContent">
+            <!-- 명언 -->
+            <div>
+               <p class="deco">Famous saying</p>
+               <div id="quote">
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+            <!-- 날씨 -->
+            <div>
+               <p class="deco">weather/temperature/location</p>
+               <div id="weather">
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+         </div>
+      </div>
    </div>
    <script src="js/greetings.js"></script>
    <script src="js/clock.js"></script>
